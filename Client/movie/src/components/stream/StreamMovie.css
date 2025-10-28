@@ -1,0 +1,37 @@
+.react-player-container {
+    height: 90vh;
+    position: relative;
+}
+
+.video-loading,
+.video-error,
+.no-video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+.video-loading p,
+.video-error p,
+.no-video p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.video-error {
+    background-color: rgba(220, 53, 69, 0.9);
+}
+
+.video-loading {
+    background-color: rgba(0, 123, 255, 0.9);
+}
